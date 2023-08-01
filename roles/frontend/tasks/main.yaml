@@ -1,4 +1,4 @@
-- nam: Test
+- name: Test
   ansible.builtin.debug:
-  msg: Hello from frontend
+   msg: Hello from catalogue
   
