@@ -12,7 +12,7 @@
 - name: Create HTTP Document Directory
   ansible.builtin.file:
     path: /usr/share/nginx/html
-    state: Directory
+    state: directory
 
 - name: Download Frontend Content 
   ansible.builtin.file:
