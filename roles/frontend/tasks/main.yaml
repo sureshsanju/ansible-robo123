@@ -2,10 +2,10 @@
   ansible.builtin.debug:
    msg: Hello from frontend
 
-- name: Install nginx
+- name: Install Nginx
   ansible.builtin.yum:
     name: nginx
-    state: Installed
+    state: installed
   register: out
 
 - name: out
