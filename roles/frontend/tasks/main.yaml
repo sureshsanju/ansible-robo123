@@ -1,4 +1,14 @@
 - name: Test
   ansible.builtin.debug:
-   msg: Hello from catalogue
+   msg: Hello from frontend
+
+- name: Install nginx
+  ansible.builtin.yum:
+    name: nginx
+    state: Installed
+  register: out
+
+- name: out
+  debug:
+   msg: "{{out}}"
   
