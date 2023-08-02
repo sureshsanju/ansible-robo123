@@ -14,9 +14,10 @@
     path: /usr/share/nginx/html
     state: directory
 
-- name: Download Frontend Content 
-  ansible.builtin.file:
+- name: Download Frontend App Content 
+  ansible.builtin.unarchive:
     src: https://roboshop-artifacts.s3.amazonaws.com/frontend.zip
     dest: /usr/share/nginx/html
     remote_src: yes
+
   
